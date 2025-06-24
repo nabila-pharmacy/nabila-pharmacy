@@ -1,114 +1,119 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>صيدلية نبيلة</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      font-family: 'Cairo', sans-serif;
-      background-color: #f4f6fa;
-    }
-    .hero {
-      background: linear-gradient(to right, #6f42c1, #00bcd4);
-      color: white;
-      padding: 80px 20px;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-    .hero p {
-      font-size: 20px;
-    }
-    .section-title {
-      color: #6f42c1;
-      margin-top: 40px;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    .icon-box {
-      text-align: center;
-      padding: 20px;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      transition: all 0.3s ease;
-    }
-    .icon-box:hover {
-      transform: scale(1.05);
-    }
-    .icon-box i {
-      font-size: 40px;
-      margin-bottom: 10px;
-      color: #00bcd4;
-    }
-    footer {
-      background-color: #343a40;
-      color: white;
-      text-align: center;
-      padding: 15px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>صيدلية نبيلة</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7fdfc;
+            color: #004d40;
+            direction: rtl;
+        }
+        header {
+            background: linear-gradient(to left, #26a69a, #00796b);
+            color: white;
+            text-align: center;
+            padding: 50px 20px 40px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #25D366;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #00796b;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .service {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .service h3 {
+            margin-top: 0;
+            color: #00695c;
+        }
+        footer {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+            .cta-button {
+                font-size: 16px;
+                padding: 10px 24px;
+            }
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-      <a class="navbar-brand" href="#">صيدلية نبيلة</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">الرئيسية</a></li>
-          <li class="nav-item"><a class="nav-link" href="products.html">المنتجات</a></li>
-          <li class="nav-item"><a class="nav-link" href="order.html">اطلب الآن</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<header>
+    <h1>أهلاً بك في صيدلية نبيلة</h1>
+    <p>خدمة توصيل فورية واستشارات دوائية موثوقة</p>
+    <a href="https://wa.me/201008750089" class="cta-button" target="_blank">اطلب الآن عبر واتساب 📱</a>
+</header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h1>صحتك تهمنا 💙</h1>
-      <p>توصيل الأدوية حتى باب بيتك في وقت قياسي</p>
-      <a href="order.html" class="btn btn-light btn-lg mt-3">اطلب الآن</a>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <div class="container">
+<section>
     <h2 class="section-title">خدماتنا</h2>
-    <div class="row g-4">
-      <div class="col-md-3"><div class="icon-box"><i class="bi bi-capsule"></i><h5>أدوية</h5><p>أدوية موثوقة من أفضل الشركات</p></div></div>
-      <div class="col-md-3"><div class="icon-box"><i class="bi bi-heart-pulse"></i><h5>رعاية صحية</h5><p>نصائح ومتابعة لحالتك</p></div></div>
-      <div class="col-md-3"><div class="icon-box"><i class="bi bi-truck"></i><h5>توصيل سريع</h5><p>نوصل لحد باب البيت</p></div></div>
-      <div class="col-md-3"><div class="icon-box"><i class="bi bi-bag-heart"></i><h5>تجميل وعناية</h5><p>منتجات أصلية للبشرة والشعر</p></div></div>
+    <div class="services">
+        <div class="service">
+            <h3>استشارات دوائية</h3>
+            <p>تحدث مع الصيدلي مباشرة لأي سؤال أو استفسار عن الأدوية والمكملات.</p>
+        </div>
+        <div class="service">
+            <h3>صرف الروشتة</h3>
+            <p>ارسل صورة الروشتة على الواتساب وسنقوم بتحضيرها وتوصيلها فورًا.</p>
+        </div>
+        <div class="service">
+            <h3>منتجات أصلية</h3>
+            <p>نوفر منتجات عناية بالبشرة والشعر أصلية 100% بأسعار منافسة.</p>
+        </div>
+        <div class="service">
+            <h3>توصيل سريع</h3>
+            <p>نغطي المهندسين والمناطق القريبة خلال أقل من ساعة.</p>
+        </div>
     </div>
-  </div>
+</section>
 
-  <!-- WhatsApp Button -->
-  <a href="https://wa.me/201008750089?text=أهلاً، أريد طلب دواء من صيدلية نبيلة" target="_blank"
-     style="position: fixed; bottom: 20px; left: 20px; z-index: 9999;">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="55" height="55" alt="واتساب">
-  </a>
+<footer>
+    &copy; 2025 صيدلية نبيلة - جميع الحقوق محفوظة | 28 شارع البصرة، المهندسين | 📞 01008750089
+</footer>
 
-  <!-- Footer -->
-  <footer class="mt-5">
-    <p>© 2025 صيدلية نبيلة - جميع الحقوق محفوظة</p>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
